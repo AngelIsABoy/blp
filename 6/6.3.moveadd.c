@@ -34,12 +34,17 @@ int main(){
     move(14, 23);
     printw("%s", "When the battle's lost and won.");
     refresh();
-    sleep(1);
+    sleep(5);
 
     attron(A_DIM);
     scan_ptr = witch_one + strlen(witch_one) - 1;
     while(scan_ptr != witch_one) {
         move(10,10);
+        insch(*scan_ptr--);
+    }
+    scan_ptr = witch_two + strlen(witch_two) - 1;
+    while(scan_ptr != witch_two) {
+        move(13,10);
         insch(*scan_ptr--);
     }
     attroff(A_DIM);
