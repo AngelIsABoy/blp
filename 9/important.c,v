@@ -1,0 +1,35 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2015.03.11.13.34.26;	author liyakai;	state Exp;
+branches;
+next	;
+
+
+desc
+@This is an important demonstration file
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@/* This is an important file for managing this project.
+ * It implements the canonical "Hello World" program.
+ * */
+
+#include<stdlib.h>
+#include<stdio.h>
+
+int main(){
+    printf("Hello World\n");
+    exit(EXIT_SUCCESS);
+}
+@
